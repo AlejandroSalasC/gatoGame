@@ -1,0 +1,45 @@
+
+header{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #b1a7a7;
+  margin-bottom: 150px;
+  border-radius: 10px;
+}
+
+.headerText{
+  margin-left: 50px;
+  font-size: 100px;
+  font-family: Andale Mono, monospace;
+}
+
+.gamebutton{
+  width:250px;
+  height: 250px;
+  border-radius: 5px;
+  size: 20px;
+  border-width: : 20px
+  border-color: black;
+}
+
+.gamebutton:hover{
+  background-color: #CBCBC9;
+}
+
+.conteiner{
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 760px;
+  margin: auto;
+}
+
+.turnLabel{
+  width: 700px;
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+  font-size: 75px;
+}
