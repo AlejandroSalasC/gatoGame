@@ -1,6 +1,7 @@
 var turn = 1; //1 = Azul y 2 = Rojo
 var buttonSelect=["10","11","12","13","14","15","16","17","18","19"];
 var count = 0;
+var win = false;
 changeTurnLabel();
 
 function buttonPress(){
@@ -12,7 +13,7 @@ function buttonPress(){
   verifyRows();
   verifyCross();
   verifyColums();
-  if(count=9){
+  if(count=9 && win != true){
     deadEndChecker();
   }
   disableButton();
@@ -27,18 +28,21 @@ function verifyRows(){
     revealRefreshButton();
     sayHowWins();
     disableAllButtons();
+    win = true;
   }
   if(buttonSelect[4]==buttonSelect[5] && buttonSelect[5]==buttonSelect[6])
   {
     revealRefreshButton();
     sayHowWins();
     disableAllButtons();
+    win = true;
   }
   if(buttonSelect[7]==buttonSelect[8] && buttonSelect[8]==buttonSelect[9])
   {
     revealRefreshButton();
     sayHowWins();
     disableAllButtons();
+    win = true;
   }
 }
 
@@ -49,18 +53,21 @@ function verifyColums(){
     revealRefreshButton();
     sayHowWins();
     disableAllButtons();
+    win = true;
   }
   if(buttonSelect[2]==buttonSelect[5] && buttonSelect[5]==buttonSelect[8])
   {
     revealRefreshButton();
     sayHowWins();
     disableAllButtons();
+    win = true;
   }
   if(buttonSelect[3]==buttonSelect[6] && buttonSelect[6]==buttonSelect[9])
   {
     revealRefreshButton();
     sayHowWins();
     disableAllButtons();
+    win = true;
   }
 }
 
@@ -71,12 +78,14 @@ function verifyCross(){
     revealRefreshButton();
     sayHowWins();
     disableAllButtons();
+    win = true;
   }
   if(buttonSelect[7]==buttonSelect[5] && buttonSelect[5]==buttonSelect[3])
   {
     revealRefreshButton();
     sayHowWins();
     disableAllButtons();
+    win = true;
   }
 
 }
