@@ -3,25 +3,29 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>GatoGame</title>
+    <script type="text/javascript" src="control/js.js"></script>
+    <title>3 en raya</title>
   </head>
-  <body bgcolor="#f0ebeb">
+  <body bgcolor="#dadbe0">
     <header>
       <div class="headerText">
-        Juego de gato.
+        3 en Raya.
       </div>
     </header>
+    <div class="turnLabel">Mira las reglas <a href="reglas.html">aqui</a>.</div>
+
     <div class="conteiner">
-      <button class="gamebutton"></button>
-      <button class="gamebutton"></button>
-      <button class="gamebutton"></button>
-      <button class="gamebutton"></button>
-      <button class="gamebutton"></button>
-      <button class="gamebutton"></button>
-      <button class="gamebutton"></button>
-      <button class="gamebutton"></button>
-      <button class="gamebutton"></button>
+      <button class="gamebutton" id="1" onclick="buttonPress()"></button>
+      <button class="gamebutton" id="2" onclick="buttonPress()"></button>
+      <button class="gamebutton" id="3" onclick="buttonPress()"></button>
+      <button class="gamebutton" id="4" onclick="buttonPress()"></button>
+      <button class="gamebutton" id="5" onclick="buttonPress()"></button>
+      <button class="gamebutton" id="6" onclick="buttonPress()"></button>
+      <button class="gamebutton" id="7" onclick="buttonPress()"></button>
+      <button class="gamebutton" id="8" onclick="buttonPress()"></button>
+      <button class="gamebutton" id="9" onclick="buttonPress()"></button>
     </div>
-    <div class="turnLabel">ExampleText.</div>
+    <div class="turnLabel" id="turnLabel">Turno del azul</div>
+    <div class="turnLabel" id="refreshLabel">Refresca la pagina para jugar de nuevo.</div>
   </body>
 </html>
